@@ -1,0 +1,38 @@
+.what {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center; 
+  background-color: #474e5d;    
+  color: #f8f8f8;
+  padding: 100px 15px 100px 15px;
+  align-content: space-around;
+  line-height: 1.8em;
+}
+
+.what-title {
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.what-description {
+  text-align:center;
+}
+
+.what-search {
+  padding:10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1.2em;
+  margin-top: 10px;  
+}
+
+.what-search:hover {
+  background-color: #e7e5e5;
+}
+
+.what-search span {
+  color: #777;
+  padding-left: 5px;
+}

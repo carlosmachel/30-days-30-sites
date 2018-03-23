@@ -1,0 +1,27 @@
+.who {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color:#1abc9c;
+  color: #f8f8f8;  
+  padding-top: 85px;
+  padding: 80px;
+}
+
+.who-img {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  margin: 40px; 
+}
+
+.who-title,
+.who-description {
+  font-weight: normal;
+}
+
+h2 {
+  text-align: center;
+}
