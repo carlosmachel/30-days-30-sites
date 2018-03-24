@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  line-height: 1.5em;
+}
+
+body {
+  background-color: #fff;  
+  font-size: 16px;
+  color: #777;
+}
+
+header,
+main {
+  display:flex;
+  justify-content: center;
+}
+
+header {
+  margin: 20px;
+  flex-direction: column;  
+  text-align: center;
+  color: #7f8fa6;
+}
+
+header h1 {
+  font-size: 4em;
+}
+
+a {
+  text-decoration: none;
+}
+
+main ul {
+  list-style: none;  
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main {
+  margin: 10px;
+}
+
+.box {
+  position:relative;
+}
+
+img {
+  width: 100vw;
+  height: 40vh;
+  opacity: 0.5;
+  padding:30px;
+}
+
+img:hover {
+  opacity:1;
+}
+
+footer {
+  background-color: black;
+  color: #fff;  
+  text-align: center;
+  padding:30px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 501px) and (max-width:960px){
+  main ul {
+    flex-direction: row;
+  }
+
+  img {
+    width: 40vw;
+    height: 20vw;
+  }
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+  main ul{
+    flex-direction: row;
+  }
+
+  img {
+    width: 30vw;
+    height: 20vw;
+  }
+}
