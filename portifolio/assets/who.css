@@ -1,4 +1,4 @@
-.who {
+.who-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -10,18 +10,18 @@
   padding: 80px;
 }
 
-.who-img {
+.who-section__img {
   width: 330px;
   height: 330px;
   border-radius: 50%;
   margin: 40px; 
 }
 
-.who-title,
-.who-description {
+.who-section__title,
+.who-section__subtitle {
   font-weight: normal;
 }
 
-h2 {
+.who-section__subtitle {
   text-align: center;
 }
