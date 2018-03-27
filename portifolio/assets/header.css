@@ -31,7 +31,7 @@
   align-items:flex-start;        
 } 
 
-.nav__menu {
+.nav__items {
   display:flex;
   margin-left: auto;
   list-style: none;  
@@ -42,7 +42,7 @@
   flex-direction: column;
 }
 
-.nav__menu__item {
+.nav__item {
   margin: 15px;
 }
 
@@ -68,7 +68,7 @@
     display:flex;
   }
 
-  .nav__menu {
+  .nav__items {
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -76,7 +76,7 @@
     margin-left:auto;
   }
 
-  .nav__menu__item:last-of-type {
+  .nav__item:last-of-type {
     margin-right: 120px;
   }
 }
