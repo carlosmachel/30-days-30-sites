@@ -1,0 +1,17 @@
+.parallax_group--header {
+  z-index: 3; /* slide under MENU */
+  font-size: 2em;  
+}
+
+.header__background {
+  background: url('../images/header-big.jpeg');
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.header__title {
+  font-family: BrokenChalk, 'sans-serif';
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: bold;    
+}
