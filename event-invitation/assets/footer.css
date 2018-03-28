@@ -1,0 +1,8 @@
+.parallax__group--footer {
+  z-index: 4; /* slide over group 6 */
+}
+
+.parallax__group--footer .parallax__layer--base {
+  background:black;
+  color:#fff;
+}
