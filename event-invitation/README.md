@@ -17,3 +17,11 @@ Images from [Pexels](https://www.pexels.com/)
 - Flexbox
 - Parallax
 - BEM
+
+## Layout tested on
+
+- Galaxy 5S
+- Nexus 5X, 6P
+- Iphone 5, 6, 6 Plus
+- IPad
+- IPad Pro
