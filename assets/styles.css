@@ -57,13 +57,12 @@ main {
 
 img {
   width: 100vw;
-  height: 40vh;
-  opacity: 0.5;
+  height: 40vh;  
   padding:30px;
 }
 
 img:hover {
-  opacity:1;
+  transform: rotate(5deg);
 }
 
 footer {
