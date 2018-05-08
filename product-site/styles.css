@@ -20,24 +20,27 @@ body, html {
 
 .container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;    
 }
 
 .product-benefict {
-    margin: auto auto;        
+    margin: auto auto;    
+    order: 2;        
+    text-align: center;    
 }
 
-.product-benefict__title {
-    font-size: 3em;
+.product-benefict__title {    
+    margin-top: 1em;
+    font-size: 2.5em;    
 }
 
-.product-name {    
-    font-size: 1em;
+.product-name {        
+    font-size: 1em;    
 }
 
-.product__button {
+.product__button {    
     background-color: #933EC5;
     color: #fff;
     padding: 1.5em 3em;
@@ -46,7 +49,10 @@ body, html {
 }
 
 .product-image {
-    margin: auto auto;
+    width:40vw;
+    height: 30vh;
+    margin: 1em auto;        
+    order: 1;
 }
 
 .description {
@@ -57,22 +63,23 @@ body, html {
 }
 
 .product-description {
-    width: 50vw;
-    font-size: 1.5em;
+    font-size: 1.2em;    
+    width: 100vw;     
     line-height: 2em;    
-    margin: 6em 2em;
+    padding: 1em;    
 }
 
 .product-ingredient {    
-    width: 50vw;
-    font-size: 1.5em;
+    width: 100vw;
+    font-size: 1.2em;
     line-height: 2em;    
-    margin: 5em 2em 5em 6em;    
+    padding:1em;
     list-style-type: none;
     
 }
 
 .product-ingredient__title {    
+    text-align: left;
     margin-bottom: 0.5em;    
 }
 
@@ -92,7 +99,8 @@ body, html {
     -webkit-animation: fuzz 0.2s linear 0s 3 ; /* Safari and Chrome */
     -o-animation: fuzz 0.2s linear 0s 3 ; /* Opera */
     backface-visibility:hidden;
-    -webkit-backface-visibility:hidden; /* Chrome and Safari */
+    -webkit-backface-visibiwidth: 100vw;    
+    display: hidden; /* Chrome and Safari */
     -moz-backface-visibility:hidden; /* Firefox */
     -ms-backface-visibility:hidden; /* Internet Explorer */
 }
@@ -117,7 +125,9 @@ body, html {
     100% {-moz-transform: rotate(0deg) translate3d( 0px,0,0);}
 }
 
-@-webkit-keyframes fuzz /* Safari and Chrome */
+@-webkit-keyframes fuzz /* Safawidth: 100vw;
+height: 100vh;
+display: flex;ri and Chrome */
 {
     0%   {-webkit-transform: rotate(5deg) translate3d( 0px,0,0);}
     25%  {-webkit-transform: rotate(-5deg) translate3d( -5px,0,0);}
@@ -134,3 +144,46 @@ body, html {
     75%  {-o-transform: rotate(5deg) translate3d( 5px,0,0);}
     100% {-o-transform: rotate(0deg) translate3d( 0px,0,0);}
 }
+
+@media screen and (min-width: 630px) {
+    .container {   
+        flex-direction: row;     
+        justify-content: space-around;
+    }
+
+    .product-benefict {
+        margin: auto auto;    
+        order: 0;        
+    }
+
+    .product-image {
+        width:40vw;
+        height: 80vh;
+        margin: 1em auto;                
+    }
+}
+
+@media screen and (min-width: 800px) {
+    
+    .product-description {
+        width: 50vw;
+        font-size: 1.5em;
+        line-height: 2em;            
+    }
+
+    .product-ingredient {    
+        text-align: center;
+        width: 50vw;
+        font-size: 1.5em;
+        line-height: 2em;            
+        list-style-type: none;
+        
+    }
+
+    .product-ingredient__title {  
+        text-align: center;          
+        margin-bottom: 0.5em;    
+    }
+
+}
+
